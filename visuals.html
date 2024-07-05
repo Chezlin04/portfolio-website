@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visuals Page</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="Styles/style.css" type="text/css">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Shell -->
+    <div class="container-fluid">
+        <header class="row Border">
+            <!-- Logo -->
+            <div class="col-md-3 Border">
+                <a href="index.html"><img src="Media/logo.png" alt="logo" class="logo"></a>
+            </div>
+            <!-- Navigation -->
+            <div class="col-md-6 Border">
+                <nav>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="visuals.html" class="active">Visuals</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Social Media Links -->
+            <div class="col-md-3 Border icons">
+                <a href="https://www.facebook.com/profile.php?id=61557470224184"><img src="Media/facebook.png" alt="Facebook" class="sm-icon"></a>
+                <a href="#"><img src="Media/instagram.png" alt="Instagram" class="sm-icon"></a>
+                <a href="https://www.linkedin.com/in/chezlin-cooke-88b661213/"><img src="Media/linkedin.png" alt="LinkedIn" class="sm-icon"></a>
+            </div>
+        </header>
+        <main>
+            <!-- Heading -->
+            <div class="row ban-contain">
+                <img src="Media/visual-banner.png" alt="">
+            </div>
+            <div class="container-fluid Border" id="work-con">
+                <!-- Row-1 -->
+                <br><br>
+                <div class="row">
+                    <div class="col-md-4 Border visual-con">
+                        <h3 class="heading">E-commerce Site</h3>
+                        <img class="thumbnail" src="Media/wordpress_site.png" alt="Wordpress_Shopping">
+                        <p>This is one of my latest E-commerce websites, created in Wordpress.
+                            The design/layout is user friendly and easy to navigate with the right amount
+                            of white spacing. The website also makes use of some useful plugins such as
+                            a ajax search bar and Woocommerce. 
+                        </p>
+                    </div>
+                    <div class="col-md-4 Border visual-con">
+                        <h3 class="heading">Currency Converter</h3>
+                        <img class="thumbnail" src="Media/currency_converter.png" alt="Currency Converter">
+                        <p>The currency converter is pretty self-explanatory, as it allows the user to 
+                            determine the value of one currency in terms of another. I created this website
+                            whilst back in college as an assignment. The navigation has a cool design to it 
+                            with the logo placed center. The website was created using HTML, CSS & JS.  </p>
+                    </div>
+                    <div class="col-md-4 Border visual-con">
+                        <h3 class="heading">Playstation Site</h3>
+                        <img class="thumbnail" src="Media/PS_Site.png" alt="Playstation">
+                        <p>This is the Playstation 5 redesign website. The design was simple by having the
+                            more important products centered, to catch the users attention. Also the product
+                            images were animated and had a cool feature that spun them 360°. The website also
+                            makes use of JS to calculate how much each and every product would cost if selected.
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <!-- Row-2 -->
+                <div class="row">
+                    <div class="col-md-6 Border visual-con">
+                        <h3 class="heading">SoloLearn</h3>
+                        <img class="thumbnail" src="Media/SoloLearn.png" alt="">
+                        <p>This is also another redesign website which offers programming courses to users.
+                            Creating this website was very fun with all the different colours and fonts being
+                            utilized. The original website is really cool with the light and dark mode features,
+                            but also has large UI features and can be overwhelming for some users.
+                        </p>
+                    </div>
+                    <div class="col-md-6 Border visual-con">
+                        <h3 class="heading">E-commerce Site</h3>
+                        <img class="thumbnail" src="Media/fuego_apparel.png" alt="">
+                        <p>Another E-commerce website, this time its summer time! The products were very unique
+                            and well designed. My favourite part about creating this website was the product
+                            carousel, it was abit challenging for me but i tried something new and my skills 
+                            kept getting better from here.
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <!-- Row-3 -->
+                <div class="row">
+                    <div class="col-md-12 Border visual-con">
+                        <h3 class="heading">1st Year Site</h3>
+                        <img class="thumbnail" src="Media/1stYear_Site.png" alt="Web-1 Portfolio_Site" >
+                        <p>Last but not least... my first ever Portfolio website. I created this website at the
+                            end of my first year in college and looking back at it now im so proud of myself. Sure 
+                            it wasnt all that but it was a milestone for me and reminds me of how far i have come.
+                            This was pure HTML and CSS, the coolest part for me at the time was creating the little 
+                            cube at the top that was animated. It was used to catch the users attention by spinning
+                            and rolling from to right. 
+                        </p>
+                    </div>
+                </div>
+                <!-- The_Modal -->
+                <div id="imgModal" class="modal">
+                    <!-- Btn -->
+                    <span class="close">&times;</span>
+                    <!-- Img -->
+                    <img class="modal-content" id="modImg">
+                    <!-- Img_Text -->
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <button onclick="topFunction()" id="back-to-top" title="Go to top">↑</button>
+        </main>
+
+        <footer class="row Border">
+            <!-- Location -->
+            <div class="col-md-4 Border">
+                <h3 class="heading">Location</h3>
+                <p>1 Vintage Street, Wilgeheuwel, Roodepoort</p>
+                <p>Johannesburg, Gauteng</p>
+            </div>
+            <!-- Trading Hours -->
+            <div class="col-md-4 Border">
+                <h3 class="heading">Hours</h3>
+                <p>Monday — Friday</p>
+                <p>08:00am — 05:00pm</p>
+            </div>
+            <!-- Contact Info -->
+            <div class="col-md-4 Border">
+                <h3 class="heading">Contact</h3>
+                <a href="mailto:webbchez@gmail.com">Webbchez@gmail.com</a>
+                <p>(073) 245-8327</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

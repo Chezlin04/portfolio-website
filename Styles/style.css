@@ -1,0 +1,449 @@
+@font-face {
+    font-family: 'Abril Fatface';
+    src: url('../Styles/AbrilFatface-Regular.ttf') format('truetype'); /* Adjust the path if needed */
+  }
+  body{
+    font-family: 'Abril Fatface', sans-serif;
+  }
+.heading{
+    font-family: 'Abril'; 
+    color: #ff5e1a;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px;
+}
+header{
+    background-color: antiquewhite;
+    box-shadow: 0 4px 10px black;
+    padding: 10px;
+}
+.logo{
+    height: auto;
+    width: 270px;
+}
+
+nav{
+   padding: 26px;
+   text-align: center;
+}
+nav ul li{
+    display: inline;
+    margin: 30px 20px 10px 20px;
+    
+}
+nav li a{
+    color: #ff5e1a;
+    font-size: 18px;
+    
+}
+nav li a:hover{
+    color: #ff5e1a;
+}
+.active{
+    text-decoration: underline;
+}
+
+.sm-icon{
+    height: auto;
+    width: 40px;
+    margin: 30px 10px 10px 10px;
+    float: right;
+}
+.intro{
+    text-align: center;
+    margin-top: 8%;
+}
+p{
+    font-family:sans-serif;
+    font-size: 17px;
+}
+.butt{
+    color: white;
+    background-color: #ff4d00;
+    padding: 17px;
+    border-radius: 50px;
+    box-shadow: 2px 3px 7px black;
+}
+.butt:hover{
+    color: white;
+    text-decoration: underline;
+    background-color: #ff5e1a;
+}
+.intro-img{
+    position: absolute;
+    left: 40%;
+    margin-top: 60px;
+    height: auto;
+    width: 45%;
+    display: block;
+    border-radius: 15px;
+    transform: skewY(6deg);
+    border: 2px solid black;
+    box-shadow: 0px 9px 9px black;
+    cursor: pointer;
+}
+.method-row{
+    padding-left: 20%;
+    
+}
+.method-sec{
+    background-color: lightgrey;
+    padding: 80px;
+}
+.method-sec h2{
+    text-align: center;
+    color: #ff5e1a;
+}
+.method-con{
+    width: auto;
+    height: 385px;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    border: 10px solid lightgrey;
+}
+.method-con h3{
+    color: #ff5e1a;
+}
+.method-con img{
+    height: auto;
+    width: 55%;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+footer{
+    background-color:antiquewhite;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid black;
+}
+footer div a{
+    color: #ff4d00;
+}
+footer div a:hover{
+    color: #ff4d00;
+}
+
+
+/* About Page */
+
+.ban-contain img{
+    display: block;
+    width: 100%;
+    height: 400px;
+}
+.ABT{
+    background-color: antiquewhite;
+    text-align: justify;
+    padding: 50px;
+}
+.ABT img{
+    height: auto;
+    width: 500px;
+    float: left;
+    border: 1px solid #ff5e1a;
+   box-shadow: 8px 9px 3px  #ff5e1a;
+   margin: 50px;
+}
+.ABT p, h2{
+   margin: 35px;
+}
+.first-letter::first-letter{
+    font-family: 'Abril';
+    font-size: 100px;
+    color: #ff5e1a;
+    float:left;
+    line-height:0.5;
+}
+#back-to-top {
+    display: none; /* Hide the button by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: #ff5e1a;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+#back-to-top:hover {
+    background-color: #ff4d00;
+}
+
+/* Visuals Page */
+#work-con{
+    background-color: lightgrey;
+    border-left: 2px solid #ff5e1a;
+    border-right: 2px solid #ff5e1a;
+    padding: 30px;
+}
+.visual-con{
+    text-align: justify;
+    display: grid;
+    place-items: center;
+}
+
+/* Modal */
+.thumbnail {
+    width: 85%;
+    height: auto;
+    margin-bottom: 15px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding: 20px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    height: auto;
+    max-width: 700px;
+  }
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from { -webkit-transform: scale(0) } 
+    to { -webkit-transform: scale(1) }
+}
+
+@keyframes zoom {
+    from { transform: scale(0) } 
+    to { transform: scale(1) }
+}
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: blue;  
+    font-size: 40px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #f00; 
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Contact Page */
+.Contact-con{
+    background-color: antiquewhite;
+    padding-top: 50px;
+}
+form{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+   padding: 20px;
+    border: 1px solid #ff5e1a;
+   box-shadow: 8px 9px 3px  black;
+}
+
+form label{
+    color: #ff5e1a;
+    font-size: 16px;
+    margin: 0;
+}
+.basic{
+    margin-bottom: 25px;
+}
+.basic input{
+    width: 80%;
+    height: 40px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.checks{
+    margin: 15px;
+}
+.checks input{
+    width: 20px;
+    color: black;
+}
+form textarea{
+    width: 50%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+form button{
+    width: 25%;
+    height: 50px;
+    display: block;
+    margin: auto;
+    
+}
+*:focus{
+    outline: none;
+}
+
+/* Media Queries */
+/* Mobile */
+@media (max-width: 767px){
+    .logo{
+        display: block;
+    }
+    nav ul li{
+        text-align: center;
+        line-height: 35px;
+    }
+    .icons{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro-img{
+        position:relative;
+        width: 18em;
+        left: 20%;
+    }
+    .heading{
+        padding: 5px;
+        margin: 10px;
+    }
+    .method-sec h2{
+        font-size: 1.7em;
+    }
+    #wrapper{
+        content: "";
+        display: table;
+        clear: both;
+        margin: 0px -75px 0px -75px;
+    }
+    .method-con{
+        float: left;
+        width: 50%;
+    }
+    .method-con p{
+        font-size: 1.1em;
+        
+    }
+    .method-row{
+        position: relative;
+        padding: 0;
+    }
+    .ban-contain img{
+        height: 12em;
+    }
+    .ABT img{
+        width: 55%;
+        height: auto;
+        float: none;
+    }
+    .ABT{
+        text-align: center;
+    }
+    .thumbnail{
+        width: 80%;
+    }
+    .modal-content{
+        width: 80%;
+        height: auto;
+    }
+    .Contact-con{
+        width: 100%;
+        height: auto;
+        text-align: left;
+    }
+    form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .butt{
+        width: 100%;
+    }
+    
+}
+/* Tablet */
+@media(min-width: 768px) and (max-width: 1024px){
+    .icons{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro{
+        float: left;
+        
+    }
+    .intro-img{
+        position: absolute;
+        float: right;
+        margin-left: 23%;
+        width: 35%;
+    }
+    #wrapper{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .method-con{
+        float: left;
+        width: 50%;
+        padding: 10px;
+    }
+    .method-row{
+        position: relative;
+        padding: 0;
+    }
+    form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+ 
+}
